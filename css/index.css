@@ -162,6 +162,9 @@ header {
 	padding: 90px 15px 20px;
 	display: flex;
 }
+.sidenav {
+	width: 25%;
+}
 .sidenav__item {
 	display: flex;
 	align-items: center;
@@ -208,9 +211,34 @@ header {
 	border-radius: 50%;
 	font-size: 0.9rem;
 }
-
+.sidenav__item-icon--circle-white {
+	background: var(--fb-blue);
+	border-radius: 50%;
+	font-size: 1rem;
+}
 .sidenav__item-icon .fas,
 .sidenav__item-icon .fab,
 .sidenav__item-icon .fa {
 	color: var(--fb-blue);
+}
+.sidenav__item-icon--circle .fas,
+.sidenav__item-icon--circle .fav,
+.sidenav__item-icon--circle .fa {
+	color: var(--fb-black);
+}
+.sidenav__item-icon--circle-white .fas,
+.sidenav__item-icon--circle-white .fav,
+.sidenav__item-icon--circle-white .fa {
+	color: var(--fb-white);
+}
+
+.sidenav__heading-title {
+	margin-bottom: 15px;
+}
+
+.sidenav__line {
+	height: 3px;
+	display: block;
+	background-color: var(--button-link);
+	margin-bottom: 15px;
 }
