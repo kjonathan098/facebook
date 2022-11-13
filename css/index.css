@@ -367,6 +367,58 @@ header {
 	font-weight: 300;
 	color: var(--light-color-text);
 }
+.createRoom {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.createRoom_btn {
+	padding: 6px;
+	border-radius: 13px;
+	border: 2px solid var(--fb-bgcolor);
+	margin-right: 15px;
+	cursor: pointer;
+	width: 186px;
+	height: 37px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.createRoom_btn i {
+	color: var(--fb-blue);
+	flex: 1, 0, auto;
+}
+.createRoom_users-bubble {
+	display: flex;
+	overflow-x: hidden;
+	overflow: scroll;
+	position: relative;
+}
+.createRoom_users-bubble::-webkit-scrollbar {
+	display: none;
+}
+
+.createRoom__bubble-user {
+	position: relative;
+	cursor: pointer;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+}
+.createRoom__viewmore-btn {
+	background: var(--fb-bgcolor);
+	font-size: 0.5rem;
+	position: absolute;
+	top: 20px;
+	right: 0px;
+	border-radius: 50%;
+	padding: 10px;
+	border: 1px solid var(--light-color-text);
+}
+.text-post {
+	margin: 20px 0;
+}
 .post__line {
 	height: 1px;
 }
@@ -558,7 +610,7 @@ header {
 
 @media only screen and (max-width: 1300px) {
 	body {
-		background: red;
+		/* background: red; */
 	}
 	.header__menu-tabs {
 		display: none;
@@ -571,7 +623,7 @@ header {
 }
 @media only screen and (max-width: 1000px) {
 	body {
-		background: blue;
+		/* background: blue; */
 	}
 	.sidenav {
 		display: none;
@@ -585,7 +637,7 @@ header {
 }
 @media only screen and (max-width: 768px) {
 	body {
-		background: purple;
+		/* background: purple; */
 	}
 
 	.header__user-name {
@@ -593,6 +645,9 @@ header {
 	}
 	.header__user-img {
 		display: none;
+	}
+	.photopost__left img {
+		display: block;
 	}
 	.header__logo-search input[type='text'] {
 		width: 40px;
@@ -608,7 +663,6 @@ header {
 	.stories {
 		flex-wrap: nowrap;
 		overflow-x: hidden;
-		background: red;
 		overflow: scroll;
 	}
 	.stories__video-container {
@@ -623,7 +677,7 @@ header {
 }
 @media only screen and (max-width: 425px) {
 	body {
-		background: pink;
+		/* background: pink; */
 	}
 	.header__acount {
 		display: none;
@@ -647,12 +701,18 @@ header {
 	.photopost_tesxt-img {
 		height: 263px;
 	}
+	.createRoom_btn {
+		font-size: 0.5rem;
+	}
 }
 @media only screen and (max-width: 375px) {
 	body {
-		background: dodgerblue;
+		/* background: dodgerblue; */
 	}
 	.photopost_tesxt-img {
 		height: 193px;
+	}
+	.photopost__engagement-top-stats {
+		display: none;
 	}
 } ;
