@@ -410,8 +410,8 @@ header {
 	background: var(--fb-bgcolor);
 	font-size: 0.5rem;
 	position: absolute;
-	top: 20px;
-	right: 0px;
+	top: 26px;
+	right: 6px;
 	border-radius: 50%;
 	padding: 10px;
 	border: 1px solid var(--light-color-text);
@@ -713,6 +713,12 @@ header {
 		height: 193px;
 	}
 	.photopost__engagement-top-stats {
+		display: none;
+	}
+	.createRoom_btn {
+		font-size: 0.8rem;
+	}
+	.createRoom_btn span {
 		display: none;
 	}
 } ;
